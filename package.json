@@ -1,6 +1,6 @@
 {
   "name": "iestv-app",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -13,10 +13,6 @@
   "build": {
     "appId": "ar.edu.iestv.app",
     "productName": "Aula Virtual IESTV",
-    "win": {
-      "target": "nsis",
-      "icon": "public/escarapela.ico"
-    },
     "directories": {
       "output": "dist"
     },
@@ -30,6 +26,18 @@
         "to": "./",
         "filter": ["icon.ico"]
       }
-    ]
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "public/escarapela.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "public/escarapela.icns"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon": "public"
+    }
   }
 }

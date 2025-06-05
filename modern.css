@@ -13,15 +13,21 @@ body, html {
 
 /* Estilo de inputs y botones */
 input, select, textarea, button {
-  background-color: #1e1e1e !important;
-  color: #eee !important;
-  border: 1px solid #444 !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 /* Botón de "Ingresar" */
-input[type="submit"], button {
-  background-color: #1976d2 !important;
-  color: #fff !important;
+input[type="submit"]:hover,
+button:hover {
+  background-color: #1565c0 !important;
+  color: #e3f2fd !important;
+}
+
+/* quita los inputs */
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #1976d2 !important;
+  outline-offset: 2px !important;
 }
 
 /* Fondos de contenedores que podrían quedar blancos */
@@ -76,4 +82,64 @@ a, a:visited {
   background-color: #1976d2 !important;
   color: white !important;
   border: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;
+}
+
+#acceso_olvido_clave{
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.infd_links a, .infd_links a:visited {
+  color: #ffffff !important; /* O el color que prefieras */
+  text-decoration: none !important;
+}
+
+.infd_links a:hover {
+  color: #1976d2 !important; /* Color al pasar el mouse */
+  text-decoration: underline !important;
+}
+
+a.nombre_instalacion, 
+a.nombre_instalacion:visited {
+  color: #ffffff !important;  /* Blanco o el color que prefieras */
+  text-decoration: none !important;
+}
+
+a.nombre_instalacion:hover {
+  color: #1976d2 !important;  /* Azul al pasar el mouse */
+  text-decoration: underline !important;
+}
+
+#footer {
+  background-color: #121212 !important;
+  color: #ccc !important;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+#footer .footer_text {
+    background-color: #121212 !important;
+    color: #ccc !important;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
 }

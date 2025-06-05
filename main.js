@@ -20,7 +20,7 @@ function createWindow() {
     width: 900,
     height: 600,
     icon: iconPath,
-    backgroundColor: '#121212',  // fondo oscuro
+    backgroundColor: 'black',  // fondo oscuro
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true
