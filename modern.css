@@ -1,34 +1,79 @@
-body {
-  background-color: #f4f6f8 !important;
-  font-family: 'Segoe UI', sans-serif !important;
-  color: #333 !important;
+/* Fondo general */
+body, html {
+  background-color: #121212 !important;
+  color: #eee !important;
 }
 
-input, button, select {
-  border-radius: 8px !important;
-  border: 1px solid #ccc !important;
-  padding: 10px !important;
-  font-size: 15px !important;
+/* Forzar modo oscuro en el wrapper (quita fondo naranja e imagen) */
+#wrapper {
+  background: #1e1e1e !important;
+  background-image: none !important;
+  color: #eee !important;
 }
 
-button {
-  background-color: #0057e7 !important;
+/* Estilo de inputs y botones */
+input, select, textarea, button {
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+  border: 1px solid #444 !important;
+}
+
+/* Botón de "Ingresar" */
+input[type="submit"], button {
+  background-color: #1976d2 !important;
+  color: #fff !important;
+}
+
+/* Fondos de contenedores que podrían quedar blancos */
+header, footer, nav, section, article, .contenedor, .login_style_1 {
+  background-color: #121212 !important;
+  color: #eee !important;
+}
+
+/* Enlaces */
+a, a:visited {
+  color: #64b5f6 !important;
+}
+
+/* Ajuste de cuadros de login si hay más clases */
+.contenedor_login, .centrado {
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+  border-radius: 6px;
+}
+
+.imagen_portada {
+  display: none !important;
+}
+
+#acceso_user_form {
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#acceso_log_form {
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#acceso_user_form input,
+#acceso_user_form select,
+#acceso_user_form textarea,
+#acceso_user_form button {
+  background-color: #2c2c2c !important;
+  color: #eee !important;
+  border: 1px solid #444 !important;
+}
+
+#acceso_user_form input[type="submit"],
+#acceso_user_form button {
+  background-color: #1976d2 !important;
   color: white !important;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #003d99 !important;
-}
-
-.login-box, .content-box, .block, .main, #wrapper {
-  border-radius: 16px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-  background: white !important;
-  padding: 20px !important;
-}
-
-a {
-  color: #0057e7 !important;
-  text-decoration: none !important;
+  border: none !important;
 }
