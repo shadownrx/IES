@@ -1,0 +1,34 @@
+body {
+  background-color: #f4f6f8 !important;
+  font-family: 'Segoe UI', sans-serif !important;
+  color: #333 !important;
+}
+
+input, button, select {
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+  padding: 10px !important;
+  font-size: 15px !important;
+}
+
+button {
+  background-color: #0057e7 !important;
+  color: white !important;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #003d99 !important;
+}
+
+.login-box, .content-box, .block, .main, #wrapper {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  background: white !important;
+  padding: 20px !important;
+}
+
+a {
+  color: #0057e7 !important;
+  text-decoration: none !important;
+}

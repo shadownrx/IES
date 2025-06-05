@@ -1,0 +1,32 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+.build/
+.next/
+out/
+userdata/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv environment files
+.env
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Optional: lock files (if you're switching between package managers)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
